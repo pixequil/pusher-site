@@ -1,0 +1,22 @@
+@font-face {
+  src: url('DetectiveCookie-Regular.woff') format("woff");
+  font-family: 'Detective Cookie';
+  font-style: normal;
+}
+
+body {
+  background-color: #36393e;
+  color: white;
+  font-family: "Detective Cookie";
+  font-size: 250%
+}
+
+p {
+  width: 800px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.pusher {
+  color: #62a9cc;
+}
