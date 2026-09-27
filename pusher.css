@@ -20,6 +20,14 @@ small {
   font-size: 80%;
 }
 
+section {
+  margin: 30px auto 60px;
+}
+
 .pusher {
   color: #62a9cc;
+}
+
+.hidden {
+  color: #36393e;
 }

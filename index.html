@@ -16,17 +16,20 @@
   <body>
     <p><span class=pusher>pusher</span> entries, for cheesy’s comic camp</p>
     <p><small>(zoom in as necessary, some of these images are kinda big!)</small></p>
-    <br>
-    <p><u>SIGNUP:</u> introduce your character and why they have what it takes to be recruited, and provide some additional information outside of the comic.</p>
-    <p><u>RESTRICTION:</u> exactly 4 panels of equal size, at least one detailed full body image of the character, and place a small black square somewhere on the second panel. </p>
-    <p><small>name: pusher<br>
-    pronouns: she/her, it/its<br>
-    least  favourite thing ever: straight paths
-    </small></p>
-    <img src="images/signup.png">
+
+    <section>
+      <p><u>SIGNUP:</u> introduce your character and why they have what it takes to be recruited, and provide some additional information outside of the comic.</p>
+      <p><u>RESTRICTION:</u> exactly 4 panels of equal size, at least one detailed full body image of the character, and place a small black square somewhere on the second panel. </p>
+      <p><small>name: pusher<br>
+      pronouns: she/her, it/its<br>
+      least  favourite thing ever: straight paths
+      </small></p>
+      <img src="images/signup.png">
+      <p><u>PLACEMENT:</u> 2nd out of 40</p>
+      <p class=hidden>i’m really proud of this concept, both in format and goal. i rushed this even though there was a lot of time to sign up because i was worried someone else would use my idea for panels “of equal size” (nobody did), so the fourth panel was unintentionally really easy.</p>
+    </section>
 
     <script>
-
       // modified from:
       // https://stackoverflow.com/questions/70703694/javascript-for-opening-images-in-a-new-tab
       // https://stackoverflow.com/questions/2498487/on-site-load-how-do-you-wrap-all-images-in-a-link-dynamically-using-javascript
@@ -46,9 +49,7 @@
         var p = document.createElement('p');
         p.appendChild(a.cloneNode(true));
         image.parentNode.replaceChild(p, image);
-
       } )
-
     </script>
   </body>
 </html>
