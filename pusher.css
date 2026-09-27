@@ -26,6 +26,7 @@ section {
 
 .pusher {
   color: #62a9cc;
+  text-shadow: 2px 2px 0 black;
 }
 
 .commentary {
@@ -37,5 +38,6 @@ section {
 
 .caps {
   color: #A0A0C5;
+  text-shadow: 2px 2px 0 black;
   /* text-decoration: underline; */
 }
