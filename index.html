@@ -34,9 +34,7 @@
       var images = document.querySelectorAll('img');
       images.forEach(image => {
         let src = image.getAttribute('src')
-        console.log(src)
         let src_thumb = src.replace("/", "/thumbs/")
-        console.log(src_thumb)
 
         image.setAttribute('src', src_thumb)
 
