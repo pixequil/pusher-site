@@ -28,9 +28,10 @@ section {
   color: #62a9cc;
 }
 
-.hidden {
+.commentary {
   color: #9EA3A3;
-  font-size: 80%
+  font-size: 80%;
+  display: none;
 }
 
 .caps {
