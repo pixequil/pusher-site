@@ -9,7 +9,7 @@
     <meta property="og:url" content="!!! internet link to url">
     <meta property="og:description" content="pusher entries, for cheesy’s comic camp">
     <link rel="stylesheet" href="pusher.css">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <div style="height:30px"></div>
@@ -23,5 +23,34 @@
     pronouns: she/her, it/its<br>
     least  favourite thing ever: straight paths
     </small></p>
+    <img src="images/signup.png">
+
+    <script>
+
+      // modified from:
+      // https://stackoverflow.com/questions/70703694/javascript-for-opening-images-in-a-new-tab
+      // https://stackoverflow.com/questions/2498487/on-site-load-how-do-you-wrap-all-images-in-a-link-dynamically-using-javascript
+      
+      var images = document.querySelectorAll('img');
+      images.forEach(image => {
+        let src = image.getAttribute('src')
+        console.log(src)
+        let src_thumb = src.replace("/", "/thumbs/")
+        console.log(src_thumb)
+
+        image.setAttribute('src', src_thumb)
+
+        var a = document.createElement('a');
+        a.setAttribute('href', src);
+        a.setAttribute('target', '_blank');
+        a.appendChild(image.cloneNode(true));
+
+        var p = document.createElement('p');
+        p.appendChild(a.cloneNode(true));
+        image.parentNode.replaceChild(p, image);
+
+      } )
+
+    </script>
   </body>
 </html>
